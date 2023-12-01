@@ -1,0 +1,150 @@
+:root{
+  --inputs-background-color: rgba(255,255,255,0.1);
+  --accent-color: rgb(0, 195, 255);
+  --blur: blur(40px);
+  --animation-time: 0.3s;
+  --icons-off-color: rgba(255,255,255,0.3);
+  --margins-color: #3d8c6c;
+}
+
+body,html {
+  background-color: black !important;
+  color: white !important;
+  font-family: sans-serif;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+select{
+  --webkit-appearance: initial;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 0 10px 0 var(--inputs-background-color);
+  background-color: var(--inputs-background-color);
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-size: medium;
+  text-indent: 1px;
+  line-height: 20px;
+}
+
+/* option{
+  color: white;
+  background-color: var(--inputs-background-color);
+} */
+
+svg{
+  transition: opacity var(--animation-time);
+}
+
+main{
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 500px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  left: 0;
+  position: absolute;
+  height: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  transition: padding-top var(--animation-time), opacity var(--animation-time);
+}
+
+
+header{
+  font-size: large;
+  font-weight: bold;
+  position: fixed;
+  text-align: center;
+  top: -50px;
+  width: 100%;
+  margin: 0;
+  /* padding: 10px; */
+  padding-top: 60px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.5);
+  /* background-color: red; */
+  /* background: black; */
+  /* background:  var(--header-gradient); */
+  border-radius: 0 0 20px 20px;
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  -o-backdrop-filter: var(--blur);
+  -moz-backdrop-filter: var(--blur);
+  z-index: 1000;
+  height: fit-content;
+}
+
+
+footer{
+  position: fixed;
+  bottom: 0;
+  /* left: 50%; */
+  padding-top: 10px;
+  padding-bottom: 35px;
+  box-sizing: border-box;
+  width: 100%;
+  /* background: black; */
+  /* background: var(--footer-gradient); */
+  /* border-radius: 10px 10px 0 0; */
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  -o-backdrop-filter: var(--blur);
+  -moz-backdrop-filter: var(--blur);
+  transition: transform var(--animation-time);
+}
+
+input[type="text"]{
+  background-color: var(--inputs-background-color);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px 10px 15px;
+  color: white;
+  outline: none;
+  font-size: medium;
+  width: calc(80%);
+}
+
+#footer-buttons-container{
+  width: 100%;
+  height: fit-content;
+  max-width: 400px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: small;
+}
+
+.footer-button{
+  width: calc(100% / 3);
+  float: left;
+  color: var(--icons-off-color);
+  margin-left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  cursor: pointer;
+  transition: color var(--animation-time);
+}
+
+.footer-button svg{
+  transform: scale(1.1);
+  transition: transform var(--animation-time);
+}
+
+.footer-button svg path{
+  fill: var(--icons-off-color)
+}

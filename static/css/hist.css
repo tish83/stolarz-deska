@@ -1,0 +1,46 @@
+#hist-container{
+  width: calc(100% - 30px);
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+#hist-container .time-string{
+  font-size: small;
+  opacity: 0.5;
+  font-style: italic;
+  text-align: right;
+}
+
+#hist-container .hist-element{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: var(--inputs-background-color);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+#hist-container .hist-element table{
+  width: 100%;
+}
+
+#hist-container .hist-element table th{
+  font-size: 10px;
+  font-style: italic;
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+#hist-container .hist-element table td{
+  text-align: center;
+}
+
+#hist-container .hist-element .load-button{
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: var(--inputs-background-color);
+  cursor: pointer;
+}

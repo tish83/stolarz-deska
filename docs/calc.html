@@ -1,0 +1,174 @@
+<div id="user-values-inputs-container">
+  <div class="user-values-inputs">
+    <hr>
+    <p>Ściana frontowa</p>
+    <div id="user-values-preview-0" class="user-values-preview"></div>
+      <table>
+        <tr>
+          <td>
+            <p>Szerokość ściany:</p>
+            <input type="text" inputmode="decimal" pattern="[0-9]+" class="user-values-inputs-input" value="">
+          </td>
+          <td>
+            <p>Jednostka:</p>
+            <select class="user-values-inputs-select">
+              <option value="1">mm</option>
+              <option value="10">cm</option>
+              <option value="100">dm</option>
+              <option value="1000" selected="selected">m</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Wysokość ściany:</p>
+            <input type="text" inputmode="decimal" pattern="[0-9]+" class="user-values-inputs-input" value="">
+          </td>
+          <td>
+            <p>&nbsp;</p>
+            <select class="user-values-inputs-select">
+              <option value="1">mm</option>
+              <option value="10">cm</option>
+              <option value="100">dm</option>
+              <option value="1000" selected="selected">m</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+  </div>
+  <div class="user-values-inputs">
+    <hr>
+    <p>Ściana Boczna</p>
+    <div id="user-values-preview-1" class="user-values-preview"></div>
+        <table>
+          <tr>
+            <td>
+              <p>
+                Ilość spadów dachu: 
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <select id="double-slope-select">
+                <option value="false">1 spad</option>
+                <option value="true">2 spady</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Głębokość domu: (1)</p>
+              <input type="text" inputmode="decimal" pattern="[0-9]+" class="user-values-inputs-input" value="">
+            </td>
+            <td>
+              <p>Jednostka:</p>
+              <select class="user-values-inputs-select">
+                <option value="1">mm</option>
+                <option value="10">cm</option>
+                <option value="100">dm</option>
+                <option value="1000" selected="selected">m</option>
+              </select>
+            </td>
+          </tr>
+          <tr id="optional-z-input">
+            <td>
+              <p>Głębokość domu: (2)</p>
+              <input type="text" inputmode="decimal" pattern="[0-9]+" class="user-values-inputs-input" value="" id="optional-z-input-input">
+            </td>
+            <td>
+              <p>&nbsp;</p>
+              <select class="user-values-inputs-select">
+                <option value="1">mm</option>
+                <option value="10">cm</option>
+                <option value="100">dm</option>
+                <option value="1000" selected="selected">m</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Wysokość poddasza:</p>
+              <input type="text" inputmode="decimal" pattern="[0-9]+" class="user-values-inputs-input" value="">
+            </td>
+            <td>
+              <p>&nbsp;</p>
+              <select class="user-values-inputs-select"">
+                <option value="1">mm</option>
+                <option value="10">cm</option>
+                <option value="100">dm</option>
+                <option value="1000" selected="selected">m</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+  </div>
+  <div class="user-values-inputs">
+    <hr>
+    <p>Dach</p>
+    <div id="user-values-preview-2" class="user-values-preview"></div>
+        <table>
+          <tr>
+            <td>
+              <p>Margines dachu (1)</p>
+              <input type="text" inputmode="decimal" pattern="[0-9]+" class="user-values-inputs-input" value="">
+            </td>
+            <td>
+              <p>Jednostka:</p>
+              <select class="user-values-inputs-select">
+                <option value="1">mm</option>
+                <option value="10">cm</option>
+                <option value="100">dm</option>
+                <option value="1000" selected="selected">m</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Margines dachu (2)</p>
+              <input type="text" inputmode="decimal" pattern="[0-9]+" class="user-values-inputs-input" value="">
+            </td>
+            <td>
+              <p>&nbsp;</p>
+              <select class="user-values-inputs-select">
+                <option value="1">mm</option>
+                <option value="10">cm</option>
+                <option value="100">dm</option>
+                <option value="1000" selected="selected">m</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Margines dachu (3)</p>
+              <input type="text" inputmode="decimal" pattern="[0-9]+" class="user-values-inputs-input" value="">
+            </td>
+            <td>
+              <p>&nbsp;</p>
+              <select class="user-values-inputs-select">
+                <option value="1">mm</option>
+                <option value="10">cm</option>
+                <option value="100">dm</option>
+                <option value="1000" selected="selected">m</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Margines dachu (4)</p>
+              <input type="text" inputmode="decimal" pattern="[0-9]+" class="user-values-inputs-input" value="">
+            </td>
+            <td>
+              <p>&nbsp;</p>
+              <select class="user-values-inputs-select">
+                <option value="1">mm</option>
+                <option value="10">cm</option>
+                <option value="100">dm</option>
+                <option value="1000" selected="selected">m</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+  </div>
+  <div id="summary-button">Podsumowanie</div>
+</div>
